@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+</head>
+<!-- class="bg-[url('./images/background.jpeg')]" -->
+<body class="flex justify-center items-center h-screen bg-no-repeat bg-cover">
+
+    <!-- form -->
+
+    <form action="#" class="p-3 w-72">
+
+        <!-- heading -->
+        <h1 class="text-center font-bold text-blue-900 text-2xl my-5 ">Welcome Back</h1>
+
+        <!-- inputs -->
+
+        <div class="flex flex-col gap-y-3">
+            <input type="email" name="email" class="placeholder-gray-400 border-grey-400 bg-white border-2 rounded-xl py-2 px-3 text-sm font-medium" placeholder="Your Email">
+            <input type="password" name="password" class="placeholder-gray-400 border-grey-400 bg-white border-2 rounded-xl py-2 px-3 text-sm font-medium" placeholder="Password">
+        </div>
+
+        <!-- forget password -->
+
+        <a class="block text-right font-medium text-sm text-blue-600" href="#">Forget Password</a>
+
+        <!-- or -->
+
+        <div class="flex items-center gap-x-1 my-3">
+            <div class="line w-full h-px bg-grey-200"></div>
+            <div class="font-medium text-xs whitespace-nowrap text-grey-200">Or Continue with</div>
+            <div class="line w-full h-px bg-grey-200"></div>
+        </div>
+
+        <!-- other methods -->
+
+        <div class="flex flex-col gap-y-3">
+
+            <!-- google button -->
+
+           <div class="text-grey-600 border-grey-400 flex justify-center items-center bg-white border-2 rounded-xl py-2 px-3 text-sm font-bold relative cursor-pointer">
+                <img src="./images/google logo.png" class="w-8 absolute left-3">
+                <p>Google</p>
+           </div>
+
+
+            <!-- facebook button -->
+
+            <div class="text-grey-600 border-grey-400 flex justify-center items-center bg-white border-2 rounded-xl py-2 px-3 text-sm font-bold relative cursor-pointer">
+                <img src="./images/facebook logo.png" class="w-5 absolute left-4">
+                <p>Facebook</p>
+           </div>
+        </div>
+
+        <!-- login button -->
+
+        <div class="text-white bg-blue-600 flex items-center justify-center py-2 font-medium rounded-xl my-3 relative">
+            <p>Login</p>
+            <img src="./images/arrow icon.png" class="w-5 filter invert absolute right-5">
+        </div>
+
+        <!-- dont have account  -->
+
+        <div class="flex gap-x-2 justify-center">
+            <p class="text-grey-400 text-xs font-medium">
+                Don't Have an Account?
+            </p>
+            <p class="text-blue-600 text-xs font-medium">
+                Sign Up
+            </p>
+        </div>
+    </form>
+</body>
+</html>
