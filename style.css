@@ -2,6 +2,7 @@
     --grey-400:#9ca3af;
     --grey-600:#4b5563;
     --grey-200:#e5e7eb;
+    --grey-300:#d1d5db;
 }
 body{
     background-image: url('./images/background.jpeg');
@@ -26,4 +27,10 @@ body{
 }
 .bg-grey-200{
     background-color: var(--grey-200);
+}
+.border-grey-200{
+    border-color: var(--grey-200);
+}
+.border-grey-300{
+    border-color: var(--grey-300);
 }
