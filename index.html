@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
 </head>
 
-<body class="bg-[url('./images/background.jpeg')] flex justify-center items-center h-screen bg-no-repeat bg-cover px-10 md:justify-between md:px-30 lg:px-40 ">
+<body
+    class="bg-[url('./images/background.jpeg')] flex justify-center items-center h-screen bg-no-repeat bg-cover px-10 md:justify-between md:px-30 lg:px-40 ">
 
 
     <!-- form -->
@@ -21,20 +22,31 @@
         <!-- inputs -->
 
         <div class="flex flex-col gap-y-3">
-            <input type="email" name="email" class="placeholder-gray-400 border-grey-400 bg-white border-2 rounded-2xl py-2 px-3 text-sm font-medium" placeholder="Your Email">
-            <input type="password" name="password" class="placeholder-gray-400 border-grey-400 bg-white border-2 rounded-2xl py-2 px-3 text-sm font-medium" placeholder="Password">
+
+            <!-- email input  -->
+
+            <input type="email" name="email"
+                class="placeholder-gray-400 border-slate-400 bg-white border-2 rounded-2xl py-2 px-3 text-sm font-medium hover:border-sky-300 focus:outline-sky-500"
+                placeholder="Your Email">
+
+            <!-- password  -->
+
+            <input type="password" name="password"
+                class="placeholder-gray-400 border-slate-400 bg-white border-2 rounded-2xl py-2 px-3 text-sm font-medium hover:border-sky-300 focus:outline-sky-500"
+                placeholder="Password">
+
         </div>
 
         <!-- forget password -->
 
-        <a class="block text-right font-medium text-sm text-blue-600" href="#">Forget Password</a>
+        <a class="block text-right font-medium text-sm text-sky-600 hover:text-sky-500" href="#">Forget Password</a>
 
         <!-- or -->
 
         <div class="flex items-center gap-x-1 my-3">
-            <div class="line w-full h-px bg-grey-200"></div>
-            <div class="font-medium text-xs whitespace-nowrap text-grey-200">Or Continue with</div>
-            <div class="line w-full h-px bg-grey-200"></div>
+            <div class="line w-full h-px bg-slate-200"></div>
+            <div class="font-medium text-xs whitespace-nowrap text-slate-200">Or Continue with</div>
+            <div class="line w-full h-px bg-slate-200"></div>
         </div>
 
         <!-- other methods -->
@@ -43,23 +55,26 @@
 
             <!-- google button -->
 
-           <div class="text-grey-600 border-grey-400 flex justify-center items-center bg-white border-2 rounded-2xl py-2 px-3 text-sm font-bold relative cursor-pointer">
+            <div
+                class="select-none text-slate-500 border-slate-400 flex justify-center items-center bg-white border-2 rounded-2xl py-2 px-3 text-sm font-bold relative cursor-pointer hover:border-sky-500 hover:text-sky-500">
                 <img src="./images/google logo.png" class="w-8 absolute left-3">
                 <p>Google</p>
-           </div>
+            </div>
 
 
             <!-- facebook button -->
 
-            <div class="text-grey-600 border-grey-400 flex justify-center items-center bg-white border-2 rounded-2xl py-2 px-3 text-sm font-bold relative cursor-pointer">
+            <div
+                class="select-none text-slate-500 border-slate-400 flex justify-center items-center bg-white border-2 rounded-2xl py-2 px-3 text-sm font-bold relative cursor-pointer hover:border-sky-500 hover:text-sky-500">
                 <img src="./images/facebook logo.png" class="w-5 absolute left-4">
                 <p>Facebook</p>
-           </div>
+            </div>
         </div>
 
         <!-- login button -->
 
-        <div class="text-white bg-blue-600 flex items-center justify-center py-2 font-medium rounded-2xl my-3 relative">
+        <div
+            class="select-none text-white bg-sky-500 flex items-center justify-center py-2 font-medium rounded-2xl my-3 relative cursor-pointer hover:bg-sky-700">
             <p>Login</p>
             <img src="./images/arrow icon.png" class="w-5 filter invert absolute right-5">
         </div>
@@ -67,14 +82,17 @@
         <!-- dont have account  -->
 
         <div class="flex gap-x-2 justify-center">
-            <p class="text-grey-400 text-xs font-medium">
+            <p class="text-slate-200 text-xs font-medium">
                 Don't Have an Account?
             </p>
-            <p class="text-blue-600 text-xs font-medium">
+
+            <!-- sign up link  -->
+
+            <a class="text-sky-600 text-xs font-medium hover:text-sky-500 " href="#">
                 Sign Up
-            </p>
+            </a>
         </div>
-        
+
     </form>
 
     <!-- side image -->
@@ -82,4 +100,5 @@
     <img src="./images/cherkkan.png" class="hidden md:block ">
 
 </body>
+
 </html>
